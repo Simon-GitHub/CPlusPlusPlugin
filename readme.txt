@@ -1,0 +1,3 @@
+PluginCore是插件核心API，也就是框架部分
+PluginShape是一个插件实例
+PluginTest是插件的一个测试工程

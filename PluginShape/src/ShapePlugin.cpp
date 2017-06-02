@@ -22,11 +22,18 @@ bool ShapePlugin::UnLoad()
 
 std::string ShapePlugin::GetFileName() const
 {
-	std::string str = "";
+#if defined( _DEBUG    ) || defined( DEBUG )
+	return "PluginShaped.dll";
+#else
 	return "PluginShape.dll";
+#endif
 }
 
 std::string ShapePlugin::GetDisplayName() const
 {
+#if defined( _DEBUG    ) || defined( DEBUG )
+	return "PluginShaped";
+#else
 	return "PluginShape";
+#endif
 }
